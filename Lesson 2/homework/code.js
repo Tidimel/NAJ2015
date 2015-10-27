@@ -24,16 +24,21 @@
 
     global.UAM.addAircraft = function (newAircraftCode) {
         // function should return new aircraft object
-		global.UAM.aircrafts.push({
-			name: newAircraftCode,
+		var air = {
+			code: newAircraftCode,
 			services: []
-		});
+		};
+		global.UAM.aircrafts.push(air);
+		console.log(air);
+		return air;
+		
     };
 
     global.UAM.removeAircraft = function (aircraftObj) {
         for (var i=0;i<=global.UAM.aircrafts.length;i++){
 			if (global.UAM.aircrafts[i].code == aircraftObj.code){
-				global.UAM.aircrafts[i] = {};
+				global.UAM.aircrafts.splice(i,1);
+			
 				return false;
 			}
 		}
@@ -54,7 +59,7 @@
 			for (var j=0;j<=global.UAM.aircrafts[i].services.length;j++){
 				global.UAM.aircrafts[i].services[j].timeToExecute = time;
 				
-			}}
+			}
 		}
     };
     

@@ -1,4 +1,7 @@
 (function (global) {
+	if (!global.UAM) {
+		global.UAM = {};
+	}
 	var Cat = null, Bird = null, Worm = null;
 	
 	var Animal = {
@@ -27,9 +30,7 @@
 	
 	
 	
-	if (!global.UAM) {
-		global.UAM = {};
-	}
+	
 
 	global.UAM.Cat = Cat;
 	global.UAM.Bird = Bird;
