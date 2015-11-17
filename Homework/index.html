@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aircrafts UAM</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/code.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="#">Samoloty</a>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Aircrafts UAM
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Dodaj nowy samolot</h3>
+                <input name="code" placeholder="Code" type="text">
+                <div id="add_air" class="btn">Dodaj</div>
+            </div>
+            <div class="col-md-6">
+                <h3>Samoloty w bazie</h3>
+                <table class="table table-responsive">
+                    <thead>
+                        <th>Kod</th>
+                        <th>Stan</th>
+                        <th>Akcje</th>
+                    </thead>
+                    <tbody id="airs">
+
+                    </tbody>
+                </table>
+                <h3>Serwisy</h3>
+                <table class="table table-responsive">
+                    <thead>
+                    <th>Samolot</th>
+                    <th>Nazwa</th>
+                    <th>Czas</th>
+                    </thead>
+                    <tbody id="services">
+
+                    </tbody>
+                </table>
+
+                <h3>Samoloty które zostaną naprawione za chwilę</h3>
+                <ul id="repairs"></ul>
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy;</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="modal fade" id="add_work">
+        <div class="modal-dialog">
+            <div class="modal-content" style="min-height: 200px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Dodaj</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-lg-6">
+                        <input type="text" name="name" placeholder="Nazwa">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" name="time" placeholder="Czas">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div id="add_service" class="btn label-success">Dodaj</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
